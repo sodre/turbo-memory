@@ -13,30 +13,7 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Add ght-pypackage remote
-        run: |
-          git remote add ght-pypackage https://github.com/sodre/ght-pypackage.git
-          git fetch ght-pypackage
-
-      - name: Prepare tree for re-rendering
-        run: |
-          git rm -rf .
-          git checkout remotes/ght-pypackage/master -- .
-          git checkout ${{ github.head_ref }} -- .github/ght.yaml
-
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.7
-      - name: Install ght-render dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install jinja2 jinja2-cli jinja2-time pyyaml
-      - run: |
-          .github/bin/ght-render.sh render-tree-structure
-          .github/bin/ght-render.sh render-tree-ght-content
-          .github/bin/ght-render.sh render-tree-content
-          #.github/bin/ght-render.sh remove-workflows
+      - uses: sodre/ght-render@master
 
       - uses: stefanzweifel/git-auto-commit-action@v2.5.0
         with:
