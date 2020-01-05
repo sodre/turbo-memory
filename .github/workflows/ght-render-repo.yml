@@ -12,12 +12,11 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
-
       - uses: sodre/ght-render@master
         with:
           template: sodre/ght-pypackage@f-external-ght
       - name: Commit changes to ${{ github.hread_ref }}
-          git push --set-upstream origin ${{ github.head_ref }} --force
+          git push --set-upstream origin HEAD:${{ github.head_ref }} --force
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
@@ -56,6 +55,3 @@ jobs:
 
             If the configuration variables were incorrect, please close this PR and
             use your ght-configure PR #${{ github.event.number }} to edit the values.
-
-
-
