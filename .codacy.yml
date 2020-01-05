@@ -1,7 +1,7 @@
 ---
 exclude_paths:
   - '.github/**'
-  - '{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}/_version.py'
+  - 'sodre/turbo_memory/_version.py'
   - 'tests/**/*'
   - 'tests/*'
   - 'benchmarks/**/*'
