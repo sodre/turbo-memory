@@ -16,9 +16,8 @@ jobs:
       - uses: sodre/ght-render@master
         with:
           template: sodre/ght-pypackage@f-external-ght
-      - run: |
-          git log
-          git push --set-upstream origin HEAD:${{ github.head_ref }} --force
+      - name: Commit changes to ${{ github.hread_ref }}
+          git push --set-upstream origin ${{ github.head_ref }} --force
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
