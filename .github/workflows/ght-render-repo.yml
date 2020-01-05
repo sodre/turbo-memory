@@ -15,7 +15,7 @@ jobs:
 
       - uses: sodre/ght-render@master
         with:
-          template-url: https://github.com/sodre/ght-pypackage@f-external-ght
+          template: sodre/ght-pypackage@f-external-ght
 
       - uses: stefanzweifel/git-auto-commit-action@v2.5.0
         with:
