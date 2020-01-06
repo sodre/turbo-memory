@@ -1,9 +1,9 @@
 [run]
-source = {{ cookiecutter.project_namespace }}
+source = sodre
 
 [report]
 omit =
     setup.py
-    {{ cookiecutter.project_namespace }}/{{ cookiecutter.project_slug }}/__main__.py
-    {{ cookiecutter.project_namespace }}/{{ cookiecutter.project_slug }}/_version.py
+    sodre/turbo_memory/__main__.py
+    sodre/turbo_memory/_version.py
     tests/*

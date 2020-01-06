@@ -1,4 +1,4 @@
-Welcome to {{ cookiecutter.project_name }}'s documentation!
+Welcome to sodre's turbo_memory's documentation!
 ======================================
 
 .. toctree::

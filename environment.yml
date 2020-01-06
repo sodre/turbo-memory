@@ -1,6 +1,6 @@
-name: {{ cookiecutter.project_repo }}-dev
+name: turbo-memory-dev
 channels:
-  - {{ cookiecutter.anaconda_organization }}
+  - sodre
   - conda-forge
   - defaults
 dependencies:
@@ -30,5 +30,4 @@ dependencies:
   - black
   - flake8
   - twine
-
 
