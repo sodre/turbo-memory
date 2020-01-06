@@ -22,7 +22,7 @@ jobs:
         run: git push --set-upstream origin HEAD:${{ github.head_ref }} --force
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
-        if: ${{ github.event_name == 'push' }}
+        if: github.event_name == 'push'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: master
