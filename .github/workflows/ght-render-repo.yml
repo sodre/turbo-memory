@@ -22,8 +22,7 @@ jobs:
         run: git push --set-upstream origin HEAD:${{ github.ref }}
 
       - name: Fetch the master branch
-        run: |
-          git fetch refs/remotes/origin/master:master
+        run: git fetch --depth=1 origin master
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
         if: github.event_name == 'push'
