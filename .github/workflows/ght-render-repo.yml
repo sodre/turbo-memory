@@ -25,7 +25,7 @@ jobs:
         if: github.event_name == 'push'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: master
+          base: refs/remotes/origin/master
           branch: ght/master
           branch-suffix: none
           title: Render ght/master into master
