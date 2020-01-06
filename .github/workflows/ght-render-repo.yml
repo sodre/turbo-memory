@@ -37,4 +37,3 @@ jobs:
               - [ ] Review the changes
               - [ ] Fix any errors by committing back to ght/master`
               - [ ] When ready to merge do **not** use Squash or Rebase
-
