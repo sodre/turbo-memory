@@ -20,6 +20,12 @@ jobs:
           template: sodre/ght-pypackage@f-external-ght
       - name: Commit changes to ${{ github.hread_ref }}
         run: git push --set-upstream origin HEAD:${{ github.ref }}
+
+      - uses: actions/checkout@v2
+        if: github.event_name == 'push'
+        with:
+          ref: master
+            token: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
         if: github.event_name == 'push'
