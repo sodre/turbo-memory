@@ -31,10 +31,4 @@ jobs:
           title: '[ght]: update rendered template'
           head: ght/master
           base: master
-          body: "
-            Modifications to ght/master were detected. Please do the following:
-
-              - [ ] Review the changes
-              - [ ] Fix any errors by committing back to ght/master`
-              - [ ] When ready to merge do **not** use Squash or Rebase
-          "
+          body: "Modifications to ght/master were detected. Please do the following:\n  - [ ] Review the changes\n  - [ ] Fix any errors by committing back to `ght/master`\n  - [ ] When ready to merge do **not** use Squash or Rebase"
