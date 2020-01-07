@@ -12,8 +12,8 @@ codacy:
 
 ght:
   command_line_interface:
-    - (*) Click
-    - ( ) None
+    - ( ) Click
+    - (*) None
 
   license:
     - (*) MIT
