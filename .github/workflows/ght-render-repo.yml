@@ -31,9 +31,10 @@ jobs:
           title: '[ght]: update rendered template'
           head: ght/master
           base: master
-          body: |
+          body: "
             Modifications to ght/master were detected. Please do the following:
 
               - [ ] Review the changes
               - [ ] Fix any errors by committing back to ght/master`
               - [ ] When ready to merge do **not** use Squash or Rebase
+          "
