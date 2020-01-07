@@ -33,7 +33,7 @@ jobs:
           head: ght/master
           base: master
           body: >
-            Modifications to ght/master were detected. You should:
+            Modifications to ght/master were detected.
                 - [ ] Review the changes
                 - [ ] Fix the errors by committing back to ght/master
                 - [ ] Do **not** use Squash or Rebase
