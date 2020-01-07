@@ -21,11 +21,23 @@ jobs:
       - name: Commit changes to ${{ github.hread_ref }}
         run: git push --set-upstream origin HEAD:${{ github.ref }}
 
-      - name: Fetch the master branch
-        run: git fetch --depth=1 origin master
+      - name: Pull Request on ght/master push
+        if: github.event_name == 'push'
+        uses: vsoch/pull-request-action@1.0.1
+        env:
+          BRANCH_PREFIX: ght/master
+          PULL_REQUEST_BRANCH: master
+          PULL_REQUEST_TITLE: '[ght]: update rendered template'
+          PULL_REQUEST_BODY: |
+            Modifications to ght/master were detected. Please do the following:
+
+              - [ ] Review the changes
+              - [ ] Fix any errors by committing back to ght/master`
+              - [ ] When ready to merge do **not** use Squash or Rebase
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v1
-        if: github.event_name == 'push'
+        if: false
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: refs/remotes/origin/master
