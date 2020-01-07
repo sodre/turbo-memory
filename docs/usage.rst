@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use {{ cookiecutter.project_name }} in a project::
+To use sodre's turbo_memory in a project::
 
-    import {{ cookiecutter.project_slug }}
+    import turbo_memory

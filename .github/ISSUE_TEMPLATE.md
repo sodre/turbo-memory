@@ -1,4 +1,4 @@
-* {{ cookiecutter.project_name }} version:
+* sodre's turbo_memory version:
 * Python version:
 * Operating System:
 

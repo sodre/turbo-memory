@@ -27,13 +27,13 @@ cookiecutter:
   #
   # These were guess based on the repository information
   # You probably want to customize them.
-  project_namespace: "{{ github.repository.full_name.split('/')[0].lower().replace(' ', '_').replace('-', '_') }}"
-  project_slug: "{{ github.repository.name.lower().replace(' ', '_').replace('-', '_').replace(cookiecutter.project_namespace+'_', '') }}"
-  project_name: "{{ cookiecutter.project_namespace }}'s {{ cookiecutter.project_slug }}"
+  project_namespace: "sodre"
+  project_slug: "turbo_memory"
+  project_name: "sodre's turbo_memory"
 
   #
   # These are likely correct...
-  anaconda_organization: "{{ cookiecutter.github_organization }}"
+  anaconda_organization: "sodre"
 
   #
   # These should not be changed at the moment...
@@ -44,9 +44,22 @@ cookiecutter:
 
   #
   # These should probably be left alone. They came from github
-  full_name: "{{ github.author.name }}"
-  email: "{{ github.author.email }}"
-  github_username: "{{ github.author.username }}"
-  github_organization: "{{ github.repository.full_name.split('/')[0] }}"
-  project_repo: "{{ github.repository.name }}"
-  project_short_description: "{{ github.repository.description }}"
+  full_name: "Patrick Sodré"
+  email: "psodre@gmail.com"
+  github_username: "sodre"
+  github_organization: "sodre"
+  project_repo: "turbo-memory"
+  project_short_description: "Testing ght-pypackage"
+
+#
+# These were picked up during Initial Commit...
+github:
+  author:
+    email: psodre@gmail.com
+    name: Patrick Sodré
+    username: sodre
+  repository:
+    name: turbo-memory
+    full_name: sodre/turbo-memory
+    description: Testing ght-pypackage
+    private: false
