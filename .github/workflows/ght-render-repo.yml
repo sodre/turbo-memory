@@ -23,6 +23,8 @@ jobs:
 
       - uses: octokit/request-action@v2.x
         if: github.event_name == 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           route: POST /repos/:repository/pulls
           repository: ${{ github.repository }}
