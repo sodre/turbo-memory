@@ -32,5 +32,10 @@ jobs:
           head: ght/master
           base: master
           body: |
-            Modifications to ght/master were detected. Please review the changes and fix any errors.
+            Modifications to ght/master were detected.
+            Please review the changes and fix any errors.
+              - [ ] Review the changes
+              - [ ] Fix the errors by committing back to ght/master
+              - [ ] Do **not** use Squash or Rebase
+              - [ ] Do **not** delete the ght/master branch
           #body: "Modifications to ght/master were detected. Please do the following:\n  - [ ] Review the changes\n  - [ ] Fix any errors by committing back to `ght/master`\n  - [ ] When ready to merge do **not** use Squash or Rebase"
