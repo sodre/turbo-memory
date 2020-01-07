@@ -34,7 +34,7 @@ jobs:
           base: master
           body: >
             Modifications to ght/master were detected. You should:
-              - [ ] Review the changes
-              - [ ] Fix the errors by committing back to ght/master
-              - [ ] Do **not** use Squash or Rebase
-              - [ ] Do **not** delete the ght/master branch
+                - [ ] Review the changes
+                - [ ] Fix the errors by committing back to ght/master
+                - [ ] Do **not** use Squash or Rebase
+                - [ ] Do **not** delete the ght/master branch
