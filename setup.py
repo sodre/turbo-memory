@@ -11,9 +11,6 @@ with open("README.rst") as readme_file:
 # The requirements section should be kept in sync with the environment.yml file
 requirements = [
     # fmt: off
-    "click>=7.0",
-    "click-plugins",
-    "entrypoints",
     # fmt: on
 ]
 
@@ -54,13 +51,6 @@ setup_kwargs = dict(
         "Programming Language :: Python :: 3.8",
     ],
     description="Testing ght-pypackage",
-    # fmt: off
-    entry_points={
-        "sodre.cli": [
-            "turbo-memory=sodre.turbo_memory.cli:turbo_memory",
-        ],
-    },
-    # fmt: on
     install_requires=requirements,
     license="MIT",
     long_description=readme,
