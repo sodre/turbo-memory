@@ -28,7 +28,7 @@ jobs:
         with:
           route: POST /repos/:repository/pulls
           repository: ${{ github.repository }}
-          title: '[ght]: update rendered template'
+          title: Merge ght/master into master
           head: ght/master
           base: master
           body: |
