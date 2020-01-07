@@ -18,10 +18,11 @@ jobs:
       - uses: sodre/ght-render@master
         with:
           template: sodre/ght-pypackage@f-external-ght
-      - name: Commit changes to ${{ github.hread_ref }}
+      - name: Push changes to ght/master
         run: git push --set-upstream origin HEAD:${{ github.ref }}
 
-      - uses: octokit/request-action@v2.x
+      - name: Create pull-request against master
+        uses: octokit/request-action@v2.x
         if: github.event_name == 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
