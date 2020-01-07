@@ -32,10 +32,11 @@ jobs:
           title: Merge ght/master into master
           head: ght/master
           base: master
-          body: |
-            Modifications to ght/master were detected.\n
-            Please review the changes and fix any errors.\n
-              - [ ] Review the changes\n
-              - [ ] Fix the errors by committing back to ght/master\n
-              - [ ] Do **not** use Squash or Rebase\n
-              - [ ] Do **not** delete the ght/master branch\n
+          body: "Modifications to ght\/master were detected. Please review the changes and fix any errors.\r\n  - [ ] Review the changes\r\n  - [ ] Fix the errors by committing back to ght\/master\r\n  - [ ] Do **not** use Squash or Rebase\r\n  - [ ] Do **not** delete the ght\/master branch"
+
+#           Modifications to ght/master were detected.\n
+#           Please review the changes and fix any errors.\n
+#             - [ ] Review the changes\n
+#             - [ ] Fix the errors by committing back to ght/master\n
+#             - [ ] Do **not** use Squash or Rebase\n
+#             - [ ] Do **not** delete the ght/master branch\n
