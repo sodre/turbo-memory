@@ -16,8 +16,8 @@ ght:
     - (*) None
 
   license:
-    - (*) MIT
-    - ( ) BSD
+    - ( ) MIT
+    - (*) BSD
     - ( ) ISC
     - ( ) Apache
     - ( ) GNUv3

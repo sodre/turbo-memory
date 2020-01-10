@@ -33,7 +33,7 @@ sodre's turbo_memory
 Testing ght-pypackage
 
 
-* Free software: MIT
+* Free software: BSD
 * Documentation: https://turbo-memory.readthedocs.io.
 
 
