@@ -12,7 +12,7 @@ sodre's turbo_memory
 .. image:: https://img.shields.io/codecov/c/gh/sodre/turbo-memory?logo=codecov&style=flat-square
    :target: https://codecov.io/gh/sodre/turbo-memory
 
-.. image:: https://img.shields.io/codacy/grade/CODACY_BADGE_TOKEN?logo=codacy&style=flat-square
+.. image:: https://img.shields.io/codacy/grade/THIS_IS_MY_OTHER_TOKEN?logo=codacy&style=flat-square
    :target: https://www.codacy.com/app/sodre/turbo-memory
    :alt: Codacy Badge
 
