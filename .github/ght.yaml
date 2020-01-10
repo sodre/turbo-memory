@@ -2,7 +2,7 @@
 codecov:
   #
   # TODO: Place your codecov.io *BADGE* token here for private repositories
-  badge_token: THIS_IS_MY_TOKEN_TOO
+  badge_token: NOT_MY_TOKEN
 
 codacy:
   #
@@ -12,14 +12,14 @@ codacy:
 
 ght:
   command_line_interface:
-    - ( ) Click
-    - (*) None
+    - (*) Click
+    - ( ) None
 
   license:
     - ( ) MIT
-    - (*) BSD
+    - ( ) BSD
     - ( ) ISC
-    - ( ) Apache
+    - (*) Apache
     - ( ) GNUv3
     - ( ) Proprietary
 
