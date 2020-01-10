@@ -8,7 +8,7 @@ codacy:
   #
   # TODO: Place your CODACY Project Id here.
   #       This is used for displaying your badge in public and private repos
-  project_id: CODACY_BADGE_TOKEN
+  project_id: THIS_IS_MY_OTHER_TOKEN
 
 ght:
   command_line_interface:
