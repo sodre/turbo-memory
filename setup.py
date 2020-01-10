@@ -43,7 +43,7 @@ setup_kwargs = dict(
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: BSD License",
         "Natural Language :: English",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
@@ -52,7 +52,7 @@ setup_kwargs = dict(
     ],
     description="Testing ght-pypackage",
     install_requires=requirements,
-    license="MIT",
+    license="BSD",
     long_description=readme,
     long_description_content_type="text/x-rst",
     include_package_data=True,
