@@ -2,7 +2,7 @@
 codecov:
   #
   # TODO: Place your codecov.io *BADGE* token here for private repositories
-  badge_token: CODECOV_BADGE_TOKEN
+  badge_token: THIS_IS_MY_TOKEN
 
 codacy:
   #
